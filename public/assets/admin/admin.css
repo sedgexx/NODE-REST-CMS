@@ -1,0 +1,197 @@
+.drop-hover { outline:2px dotted #ccc;}
+
+.content { background-color:#fff;}
+.content:hover { }
+.contentcontainer { display:block; min-height: 8em}
+
+.ui-sortable-helper { 
+-webkit-box-shadow: 0px 0px 8px rgba(50, 50, 50, 0.6);
+-moz-box-shadow:    0px 0px 8px rgba(50, 50, 50, 0.6);
+box-shadow:         0px 0px 8px rgba(50, 50, 50, 0.6);
+opacity:0.8;filter:alpha(opacity=80);
+}
+
+#console {
+    position: fixed;
+    bottom: 0;
+    left:0; right:0;
+    padding:0.3em;
+    width: 100%;
+    z-index:500; background-color:#666; color:#fff;
+}
+
+#console.active { display:block;}
+
+#console a, #console a:active, #console a:hover { color:#fff;}
+
+#sessionmessage { float:left;}
+#sessionextend { float:right;}
+
+#console:after { clear:both; content:".";display:block; visibility:hidden; line-height:0; height:0;}
+
+
+.servergood { }
+.serverbad { }
+
+
+
+.editableActive:hover { cursor:default; }
+.content { position:relative;}
+.content .handle { display:none;position:absolute; left:0; right:0; top:0; height:1em; background-color:#ccc;  content:"."; cursor:move;}
+.content:hover { padding-top:1.5em;}
+.content:hover .handle { display:block;}
+
+.editableActive { 
+	outline:none; outline:0;
+	-webkit-box-shadow: inset 0px 0px 8px rgba(50, 50, 50, 0.6);
+	-moz-box-shadow:   inset  0px 0px 8px rgba(50, 50, 50, 0.6);
+	box-shadow:        inset  0px 0px 8px rgba(50, 50, 50, 0.6);
+
+	padding-top:3em !important;
+}
+
+.editableActive:hover { padding-top:3em;}
+
+.editableActive .handle { display:block !important; height:2.5em;}
+
+.content-data { outline:none;}
+
+
+#formatButtons button { 
+
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-weight:bold;
+	font-style:normal;
+	line-height:27px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+	cursor:pointer;
+	margin:0;
+	float:left;
+	}
+
+#formatButtons button:hover { 
+
+border:1px solid #bbb;
+color:#555;
+
+}
+
+#formatButtons button.first {
+
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+
+}
+
+#formatButtons button.last {
+
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+
+	
+}
+
+body #formatBar { display:none;}
+
+body .content #formatBar { display:block; position:absolute; top:0.1em; left:0.2em;}
+.prompts { display:none;}
+.editableActive .prompts { display:block;}
+
+.editableActive .prompt { display:block; background-color:#333; position:absolute; left:0; right:0; top:0; bottom:0; z-index:300; padding:1em; opacity:0.8;filter:alpha(opacity=80);}
+.editableActive .promptButtons { display:block; background-color:#fff; position:absolute; left:2em; right:2em; top:2em; bottom:2em; z-index:301; border-radius:3px; padding:1em;}
+
+.editableActive .contentcol { outline:1px dashed #efefef; content:"."; min-height: 5em}
+
+.editableActive .contentcol .detail { min-height: 4.5em;}
+
+
+
+/* ADMIN UI ------------------------------------  */
+#admin { border-bottom:2px dashed #ccc; background-color:#efefef;}
+
+#adminbar { padding:0.5em;}
+
+#adminbar button {}
+
+#admin_login { padding-bottom:0.5em;}
+.adminuser { font-weight:bold; }
+
+
+
+.admin button { cursor:pointer; display:inline-block; padding:0.5em; padding-left:1em; margin:0; padding-right:1em; border:0; margin:0; border-radius: 0.3em; moz-border-radius: 0.3em; }
+
+.admin button { background-color:#34495E; color:#A2B8CC;}
+.admin button:hover,.admin button.active { background-color:#415B76; color:#fff;}
+.admin button .fa { color:#fff; margin-right:0.5em;}
+
+.admin button.first, .admin button.mid, .admin button.last { float:left;}
+.admin button.first { border-bottom-right-radius: 0; border-top-right-radius: 0;margin-right:0.1em;}
+.admin button.mid { border-radius: 0; margin-right:0.1em; }
+.admin button.last { border-bottom-left-radius: 0; border-top-left-radius: 0;}
+
+.admin_panel { background-color:#fff; position:relative;border:0.2em solid #415B76; margin:0.5em; padding:1em; display:none; margin-top:0; border-radius: 0.3em; moz-border-radius: 0.3em; }
+
+.admin_panel.active { display:block;}
+
+.admin_panel .formdiv { display:block; content:"."; height:0.1em; background-color:#fff; line-height:0.1em; margin-top:0.5em; margin-bottom:0.5em;}
+
+.admin_panel label { display:block; padding-bottom:0.5em; font-weight:bold;}
+
+.admin_panel .col1, .admin_panel .col2 { display:block; float:left; width:50%;}
+
+.admin_panel .col1 .data { padding-right:2em;}
+
+.admin_panel h2 { margin-top:0;}
+
+.admin_panel .adminlayouts {}
+.admin_panel .row { display:block; clear:both;}
+
+.admin_panel .row .layout { display:block; float:left; width:25%; cursor:pointer;}
+
+.admin_panel .row .layout span { display:block; padding:0.3em; margin:0.3em; background-color:#fff;}
+.admin_panel .row .layout span.selected { background-color:#ccc; }
+.admin_panel .row .layout img { display:block; width:100%;}
+
+/* admin forms */
+
+.admin input[type=text], .admin textarea { width:90%; border:0.2em solid #ccc; margin:0; padding:0.4em; border-radius: 0.3em}
+.admin input[type=text]:focus, .admin textarea:focus { border:0.2em solid #415B76; }
+
+.adminformerror { display:block;}
+.adminformerror .message { display:none; margin-left:1em; margin-right:1em;background-color:red; padding:0.3em; color:#fff; font-size:80%; font-weight:bold; width:80%;}
+
+.adminformerror .active { display:block;}
+
+#admin_page_edit_deleteConfirm { display:none;  position:absolute; top:0; bottom:0; left:0; right:0; background-color:#333; opacity:0.7;
+filter:alpha(opacity=70); z-index:20;}
+
+#admin_page_edit_deleteConfirmMessage { display:none; position:absolute; z-index:21; background-color:#fff; border-radius: 0.3em; padding:3em; left:2em; right:2em; top:2em; bottom:2em;}
+
+#admin_page_edit_deleteConfirm.active, #admin_page_edit_deleteConfirmMessage.active { display:block;}
+
+.closePanel { display:block; cursor:pointer; position:absolute; top:1em; right:1em; width:2em;height:2em; color:#333;}
+
+
+

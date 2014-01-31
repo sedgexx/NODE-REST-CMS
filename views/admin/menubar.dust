@@ -1,0 +1,50 @@
+<div id="admin" class="admin">
+
+	<div id="adminbar">
+
+		<div id="admin_login">
+			{#admin} Welcome <span class="adminuser">{user}</span>, <a href="/logout">Logout</a> {/admin} | 
+			This page is 
+			<strong>
+				{#page}
+					{@eq key=status value="unpublished"}
+						Hidden
+					{/eq}
+					{@eq key=status value="published"}
+						Published
+					{/eq}
+				{/page}
+			</strong>
+		</div>
+		<div id="admin_options">
+			<button id="admin_open_page_edit" class="admin_open first"><i class="fa fa-edit"></i> Page Properties</button>
+			{#page}
+				{@eq key=status value="unpublished"}
+					<button data-pageid="{page._id}" data-status="published" data-pagehref="{page.href}" class="admin_page_edit_status mid"><i class="fa fa-eye"></i> Publish Page</button>
+				{/eq}
+				{@eq key=status value="published"}
+					<button data-pageid="{page._id}" data-status="unpublished" data-pagehref="{page.href}" class="admin_page_edit_status mid"><i class="fa fa-eye-slash"></i> Hide Page</button>
+				{/eq}
+			{/page}
+			
+			<button id="admin_open_page_create" class="admin_open mid"> <i class="fa fa-plus"></i> New Page</button>
+			<button id="admin_open_media" class="admin_open last"><i class="fa fa-camera-retro"></i> Manage Media</button>
+			<div class="c"></div>
+		</div>
+		
+	</div>
+
+	<div id="admin_page">
+
+		<!-- CREATE PAGE -->
+		<div id="admin_page_create" class="admin_panel">
+			{>"admin/createpage.dust"/}
+		</div>
+
+		<div id="admin_page_edit" class="admin_panel">
+			{>"admin/editpage.dust"/}
+		</div>
+
+	</div> 
+
+</div>

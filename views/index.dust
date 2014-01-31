@@ -1,0 +1,47 @@
+{>htmldoc/}
+
+{<admin}
+	{#admin}
+	  {@eq key=active value="yes"}
+	  {>"admin/menubar.dust"/}
+	  {>"admin/formatbar.dust"/}
+	  {/eq}
+	{/admin}
+{/admin}
+
+{<authenticate}{>"partials/authenticate.dust"/}{/authenticate}
+
+{<login}
+	{#login}
+		{@select key=login }
+		  {@eq value="yes"}
+		    {>"partials/login.dust"/}
+		  {/eq}
+		{/select}
+		{@select key=register }
+		  {@eq value="yes"}
+		  	{>"partials/register.dust"/}
+		  {/eq}
+		{/select}
+	{/login}
+{/login}
+
+
+{<adminjs}
+	{#admin}
+	  {@eq key=active value="yes"}
+	  {>"admin/js.dust"/}
+	  {/eq}
+	{/admin}
+{/adminjs}
+
+{<loginjs}
+	{#login}
+	  {@eq key=login value="yes"}
+	  {>"partials/loginjs.dust"/}
+	  {/eq}
+	    {@eq key=register value="yes"}
+	  {>"partials/registerjs.dust"/}
+	  {/eq}
+	{/login}
+{/loginjs}

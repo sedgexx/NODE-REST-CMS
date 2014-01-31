@@ -1,0 +1,43 @@
+<div class="inputScreen">
+	<h1>New Person</h1>
+
+	<!-- <textarea id="req_createjson">{firstname:Fred,lastname:Arnolds,"email":"freda@gmail.com"}</textarea> -->
+
+	 <label for="newuser_firstname">First Name</label>
+	 <input type="text" class="obj_input" id="newuser_firstname"/>
+
+		<div class="nl"></div>
+
+	 <label for="newuser_lastname">Last Name</label>
+	 <input type="text" class="obj_input" id="newuser_lastname"/>
+
+	 	<div class="nl"></div>
+
+	 <label for="newuser_email">Email</label>
+	 <input class="obj_input" type="text" id="newuser_email"/>
+
+		<div class="nl"></div>
+
+	 <label for="newuser_username">Username</label>
+	 <input class="obj_input" type="text" id="newuser_username"/>
+
+		<div class="nl"></div>
+
+	 <label for="newuser_password">Password</label>
+	 <input class="obj_input" type="password" id="newuser_password"/>
+
+		<div class="nl"></div>
+
+	<button id="create">CREATE</button>
+
+</div>
+
+<div id="create_response">
+
+	<div class="inputScreen">
+
+		<textarea id="res_json"></textarea>
+
+	</div>
+
+</div>

@@ -1,0 +1,3 @@
+<div {#admin}{@eq key=active value="yes"}id="content_{_id}"{/eq}{/admin} class="content" {#admin}{@eq key=active value="yes"}data-position_row="{row}" data-position_column="{col}" data-position_vieworder="{vieworder}"{/eq}{/admin}>
+	<div class="content-data">{html|s}</div>
+</div>

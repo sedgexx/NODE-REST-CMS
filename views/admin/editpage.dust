@@ -1,0 +1,80 @@
+		<h2>Page Properties</h2>
+		
+		<div class="closePanel"><i class="fa fa-times-circle"></i></div>
+
+		<div class="col1">
+			<div class="data">
+				<label for="admin_page_edit_name">Link Name</label>
+				<input id="admin_page_edit_name" type="text" value="{page.name}"/>
+
+				<div class="formdiv"></div>
+
+				<label for="admin_page_edit_href">Link URL</label>
+				<input id="admin_page_edit_href" type="text"  value="{page.href}"/>
+
+				<h3>Search Engine Properties</h3>
+
+				<label for="admin_page_edit_title">Title</label>
+				<input id="admin_page_edit_title" type="text"  value="{page.title}"/>
+
+				<div class="formdiv"></div>
+
+				<label for="admin_page_edit_description">Description</label>
+				<textarea id="admin_page_edit_description">{page.description}</textarea>
+
+				<div class="formdiv"></div>
+
+				<label for="admin_page_edit_keywords">Keywords</label>
+				<input id="admin_page_edit_keywords" type="text"  value="{page.keywords}"/>
+			</div>
+		</div>
+		<div class="col2">
+
+			<label for="admin_page_edit_layout">Content Layout</label>
+
+			{>"admin/layouts.dust" default="{page.layout}"/}
+
+			<input id="admin_page_edit_layout" type="hidden" class="layoutinput"  value="{page.layout}" />
+
+			<div class="formdiv"></div>
+
+			<label for="admin_page_edit_theme">Theme</label>
+			<input id="admin_page_edit_theme" type="text"  value="{page.theme}"/>
+
+		</div>
+
+		<div class="c"></div>
+
+		<input type="hidden" id="admin_page_edit_vieworder"  value="{page.vieworder}"/>
+		<input type="hidden" id="admin_page_edit_status"  value="{page.status}"/>
+		<input type="hidden" id="admin_page_edit_id"  value="{page._id}"/>
+
+		<div class="formdiv"></div>
+
+		<button id="admin_page_edit_button"> <i class="fa fa-check"></i> <span>Update Page</span></button>
+		<button id="admin_page_edit_predelete_button"> <i class="fa fa-trash-o"></i> <span>Delete Page</span></button>
+
+		<div id="admin_page_edit_deleteConfirm">
+
+		</div>
+
+		<div id="admin_page_edit_deleteConfirmMessage">
+			<div class="message">
+
+				<h2>Are you sure you want to delete this page ? </h2>
+				<div class="confirmdeleteoptions">
+					<button id="admin_page_edit_delete_button" data-pageid="{page._id}" class="first"> <i class="fa fa-trash-o"></i> <span>Yes, remove</span></button>
+					<button id="admin_page_edit_deletecancel_button" class="last active"> <i class="fa fa-share"></i> <span>No way!</span></button>
+					<div class="c"></div>
+				</div>
+				<div class="helpinfo">
+				<h3>If you remove this page</h3>
+					<p>By removing this page:
+						<ul>
+							<li>All content that is on this page will be 'orphaned'. (You can add these content items to another page later)</li>
+							<li>If this is your first page, the next page in order will become your websites 'home' page</li>
+						</ul>
+					<p>
+				</div>
+			</div>
+		</div>

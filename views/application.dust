@@ -1,0 +1,7 @@
+{! special markup !}
+{+admin}{/admin}
+{+login}{/login}
+
+{! special scripts !}
+{+adminjs}{/adminjs}
+{+loginjs}{/loginjs}

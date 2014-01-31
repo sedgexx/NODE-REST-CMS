@@ -1,0 +1,4 @@
+<script>
+	var $auth = { key : "{authentication.key}", expires : "{authentication.expires}", userid:"{authentication.userid}", email:"{authentication.email}" };
+</script>
+<script src="/assets/admin/admin.js"></script>

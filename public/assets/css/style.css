@@ -1,0 +1,25 @@
+body {
+  padding:0; margin:0;
+  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#container { padding:1em;}
+a {
+  color: #00B7FF;
+}
+
+.content { border:2px solid #ccc; padding:10px; margin:10px; border-radius:5px;}
+
+
+.col1, .col2 { display:block; float:left; width:50%;}
+.c { clear:both; display:block; }
+
+.contentcol { display:block; float:left; width:50%;}
+
+
+
+.contentcol .detail { display:block; padding:0.5em;}
+
+.content img { display:block; width:100%;}
+
+#console { display:none;}

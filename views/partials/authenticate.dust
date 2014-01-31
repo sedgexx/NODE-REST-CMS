@@ -1,0 +1,5 @@
+{#admin}
+	  {@eq key=active value="yes"}{/eq}
+	  {:else}
+	  <a href="/login">Login</a>
+{/admin}

@@ -1,0 +1,52 @@
+<div class="col1 row1 contentcontainer {#admin}{@eq key=active value="yes"}contentSortable{/eq}{/admin}"  {#admin}{@eq key=active value="yes"}data-position_row="1" data-position_column="1"{/eq}{/admin}>
+
+	{#contents}
+	{@eq key=position.row value=1}
+		{@eq key=position.column value=1}
+		{>"partials/content.dust" row=position.row col=position.column vieworder=position.vieworder/}
+		{/eq}
+	{/eq}
+	{/contents}
+
+</div>
+
+<div class="col2 row1 contentcontainer {#admin}{@eq key=active value="yes"}contentSortable{/eq}{/admin}" {#admin}{@eq key=active value="yes"}data-position_row="1" data-position_column="2"{/eq}{/admin}>
+
+	{#contents}
+	{@eq key=position.row value=1}
+		{@eq key=position.column value=2}
+			{>"partials/content.dust" row=position.row col=position.column vieworder=position.vieworder/}
+		{/eq}
+	{/eq}
+	{/contents}
+
+</div>
+<div class="c"></div>
+<hr/>
+<div class="c"></div>
+
+<div class="col1 row2 contentcontainer {#admin}{@eq key=active value="yes"}contentSortable{/eq}{/admin}" {#admin}{@eq key=active value="yes"}data-position_row="2" data-position_column="1"{/eq}{/admin}>
+
+	{#contents}
+	{@eq key=position.row value=2}
+		{@eq key=position.column value=1}
+			{>"partials/content.dust" row=position.row col=position.column vieworder=position.vieworder/}
+		{/eq}
+	{/eq}
+	{/contents}
+
+</div>
+
+<div class="col2 row2 contentcontainer {#admin}{@eq key=active value="yes"}contentSortable{/eq}{/admin}" {#admin}{@eq key=active value="yes"}data-position_row="2" data-position_column="2"{/eq}{/admin}>
+
+	{#contents}
+	{@eq key=position.row value=2}
+		{@eq key=position.column value=2}
+			{>"partials/content.dust" row=position.row col=position.column vieworder=position.vieworder/}
+		{/eq}
+	{/eq}
+	{/contents}
+
+</div>
+
+<div class="c"></div>

@@ -1,0 +1,5 @@
+#container { margin:0.1em; border:1px solid green;}
+
+#pagelinks ul { display:block;}
+#pagelinks li { display:block; float:left;}
+#pagelinks li a { display:block; padding:0.5em; border:0.1em solid #999; border-radius:0.3em; background-color:#efefef; color:#000; text-decoration: none; margin-right:0.2em;}

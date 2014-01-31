@@ -1,0 +1,30 @@
+<div id="formatBar">
+	<div id="formatButtons" class="btn-group btn-group-sm editor">
+		<button type="button" data-format="bold" class="first btn btn-default"><i class="fa fa-bold"></i></button>
+		<button type="button" data-format="italic" class="btn btn-default"><i class="fa fa-italic"></i></button>
+		<button type="button" data-format="underline" class="btn btn-default"><i class="fa fa-underline"></i></button>
+		<button type="button" data-format="h1" class="btn btn-default">H1</button>
+		<button type="button" data-format="h2" class="btn btn-default"><span style="font-size:90%">H2</span></button>
+		<button type="button" data-format="h3" class="btn btn-default"><span style="font-size:80%">H3</span></button>
+		<button type="button" data-format="insertOrderedList" class="btn btn-default"><i class="fa fa-list-ol"></i></button>
+		<button type="button" data-format="insertUnorderedList" class="btn btn-default"><i class="fa fa-list-ul"></i></button>
+		<button type="button" data-format="undo" class="btn btn-default"><i class="fa fa-undo"></i></button>
+		<button type="button" data-format="redo" class="btn btn-default"><i class="fa fa-repeat"></i></button>
+		<button type="button" data-format="2col" class="btn btn-default"><i class="fa fa-columns"></i></button>
+		<button type="button" data-format="insertImage" class="btn btn-default"><i class="fa fa-camera"></i></button>
+		<button type="button" id="formatSave" data-format="delete" class="last btn btn-default"><i class="fa fa-trash-o"></i></button>
+		<button type="button" id="formatSave" data-format="save" class="last btn btn-default"><i class="fa fa-save"></i></button>
+		<div class="c"></div>
+	</div>
+</div>
+
+<div id="prompts">
+
+	<div id="content_prompt_delete" class="prompts">
+		<div class='prompt'></div>
+		<div class='promptButtons'><span>Delete this content ?</span><button id='content_delete'>Delete</button><button id='content_cancel'>No way!</button></div>
+	</div>
+
+</div>
+
+<div id="trash"></div>

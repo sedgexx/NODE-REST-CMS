@@ -1,0 +1,61 @@
+		<h2>Create a New Page</h2>
+
+		<div class="closePanel"><i class="fa fa-times-circle"></i></div>
+
+		<div class="col1">
+			<div class="data">
+				<label for="admin_page_create_name">Link Name</label>
+				<input id="admin_page_create_name" type="text"/>
+				<span id="admin_page_create_error_name" class="adminformerror"><span class="message"></span></span>
+
+				<div class="formdiv"></div>
+
+				<label for="admin_page_create_href">Link URL</label>
+				<input id="admin_page_create_href" type="text"/>
+				<span id="admin_page_create_error_href" class="adminformerror"><span class="message"></span></span>
+
+				<h3>Search Engine Properties</h3>
+
+				<label for="admin_page_create_title">Title</label>
+				<input id="admin_page_create_title" type="text" />
+				<span id="admin_page_create_error_title" class="adminformerror"><span class="message"></span></span>
+
+				<div class="formdiv"></div>
+
+				<label for="admin_page_create_description">Description</label>
+				<textarea id="admin_page_create_description"></textarea>
+				<span id="admin_page_create_error_description" class="adminformerror"><span class="message"></span></span>
+
+				<div class="formdiv"></div>
+
+				<label for="admin_page_create_keywords">Keywords</label>
+				<input id="admin_page_create_keywords" type="text"/>
+				<span id="admin_page_create_error_keywords" class="adminformerror"><span class="message"></span></span>
+			</div>
+		</div>
+		<div class="col2">
+
+			<label for="admin_page_create_layout">Content Layout</label>
+			<span id="admin_page_create_error_layout" class="adminformerror"><span class="message"></span></span>
+
+			{>"admin/layouts.dust"/}
+
+			<input id="admin_page_create_layout" type="hidden" class="layoutinput" />
+
+			<div class="formdiv"></div>
+
+			<label for="admin_page_create_theme">Theme</label>
+			<input id="admin_page_create_theme" type="text"  value="basic"/>
+			<span id="admin_page_create_error_theme" class="adminformerror"><span class="message"></span></span>
+
+		</div>
+
+		<div class="c"></div>
+
+		<div class="formdiv"></div>
+
+		<input type="hidden" id="admin_page_create_vieworder"  value="300"/>
+		<input type="hidden" id="admin_page_create_status"  value="unpublished"/>
+
+This is a subpage of {page.name} <input type="checkbox" id="isSubpage" data-parentpageid="{page._id}" checked="checked"/>
+		<button id="admin_page_create_button"> <i class="fa fa-check"></i> <span>Create Page</span></button>

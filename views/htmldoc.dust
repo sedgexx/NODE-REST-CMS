@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{page.title}</title>
+    <meta name="description" content="{page.description}"/>
+    <meta name="keywords" content="{page.keywords}" />
+    <link rel='stylesheet' href='/assets/css/style.css' />
+    <link rel='stylesheet' href='/theme/{page.theme}/css/style.css' />
+  </head>
+  <body>
+
+    <div id="container">
+
+        <!-- header -->
+        <h1>{page.name}</h1>
+        <p>{page.description}</p>
+
+        <hr/>
+        <ul id="pagelinks">
+        {#pages}
+          <li id="link_{_id}" data-pageid="{_id}" class="pages vieworder_{vieworder}">
+            <a  href="/{href}">{name}</a>
+              <div class="submenu1">
+                {#pages}
+                     <a  href="/{href}">{name}</a>
+                    <div class="submenu2">
+                        {#pages}
+                            <a  href="/{href}">{name}</a>
+                        {/pages}
+                    </div>
+                {/pages}
+            </div>
+        </li>
+        {/pages}
+        </ul>
+        <div class="c"></div>
+        <hr/>
+        <!-- content -->
+        <div class="page" id="{page._id}">
+        {>"{page.layout}.dust"/} 
+        </div>
+        <!-- footer -->
+        {+authenticate}{/authenticate}
+        <hr/>
+    </div>
+
+    {! scripts !}
+    <script src="/assets/vendor/jquery-1.9.1.js"></script>
+    <script src="/assets/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+
+    {! do not remove !}
+    {>"application.dust"/}
+
+    <script>
+
+    </script>
+
+
+  </body>
+</html>
