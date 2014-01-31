@@ -1,24 +1,25 @@
-<h1>Work In Progress</h1>
-<p>31/01/2014 - This software is in first draft and will not run out of the box</p>
-<h2>JSON REST API and CMS Built on NodeJS with a MONGODB datastore</h2>
+Work In Progress
+=================
 
-<hr/>
-<h2>Key Components</h2>
+31/01/2014 - This software is in first draft and will not run out of the box
 
-<ul>
- <li>DustJS-Linkedin Server side templating for SEO</li>
- <li>MONGODB Query Syntax for the REST API</li>
-</ul>
+JSON REST API and CMS Built on NodeJS with a MONGODB datastore
+--------------------------------------------------------------
 
-<h2>Concepts</h2>
+Key Components
+--------------
 
-<ul>
-<li>CMS Admin is routed through the REST api for all CRUD operations to allow for update of data from multiple applications</li>
-<li>Website can be navigated by the REST API through meaningful HIATUS</li>
-<ul>
+- DustJS-Linkedin Server side templating for SEO
+- MONGODB Query Syntax for the REST API
 
-<h2>Goal</h2>
+Concepts
+--------
 
-<ul>
-<li>To create website/ecommerce building software that has clear data and presentation separation</li>
-</ul>
+- CMS Admin is routed through the REST api for all CRUD operations to allow for update of data from multiple applications
+- Website can be navigated by the REST API through meaningful HIATUS
+
+
+Goal
+----
+
+- To create website/ecommerce building software that has clear data and presentation separation
